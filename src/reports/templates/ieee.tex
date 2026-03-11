@@ -1,0 +1,58 @@
+% INQUIRO IEEE Conference/Journal Template
+% Based on IEEE transaction style guidelines
+% Note: For official submissions, use IEEEtran.cls from https://ctan.org/pkg/ieeetran
+
+\documentclass[conference]{{IEEEtran}}
+
+% If IEEEtran.cls is not available, fall back to article with IEEE-like formatting
+% \documentclass[10pt,twocolumn]{{article}}
+% \usepackage[margin=0.75in]{{geometry}}
+
+% Core packages
+\usepackage[utf8]{{inputenc}}
+\usepackage[T1]{{fontenc}}
+\usepackage{{amsmath,amssymb,amsfonts}}
+\usepackage{{graphicx}}
+\usepackage{{booktabs}}
+\usepackage{{float}}
+\usepackage{{textcomp}}
+
+% IEEE formatting packages
+\usepackage{{cite}}
+\usepackage{{algorithmic}}
+\usepackage{{array}}
+\usepackage{{stfloats}}
+\usepackage{{url}}
+
+% Links
+\usepackage{{hyperref}}
+\hypersetup{{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdfborder={{0 0 0}}
+}}
+
+% Better typography
+\usepackage{{microtype}}
+
+% Title
+\title{{{title}}}
+
+% Author block - IEEE style
+\author{{
+    \IEEEauthorblockN{{{author}}}
+    \IEEEauthorblockA{{{institution}}}
+}}
+
+\begin{{document}}
+
+\maketitle
+
+{body}
+
+{bibliography}
+
+\end{{document}}

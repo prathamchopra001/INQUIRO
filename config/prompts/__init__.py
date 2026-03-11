@@ -1,0 +1,36 @@
+"""Prompt templates for INQUIRO agents."""
+
+from .lit_agent import (
+    QUERY_GENERATION_PROMPT,
+    PAPER_RANKING_PROMPT,
+    FINDING_EXTRACTION_PROMPT,
+    CORE_TERM_EXTRACTION_PROMPT,
+    QUERY_VALIDATION_PROMPT,
+)
+
+from .domain_anchors import (
+    DOMAIN_ANCHOR_EXTRACTION_PROMPT,
+    QUERY_ANCHORING_INSTRUCTION,
+)
+
+from .research_plan import (
+    RESEARCH_PLAN_PROMPT,
+    COVERAGE_CHECK_PROMPT,
+    MULTI_AREA_DETECTION_PROMPT,
+)
+
+__all__ = [
+    # Literature agent prompts
+    "QUERY_GENERATION_PROMPT",
+    "PAPER_RANKING_PROMPT",
+    "FINDING_EXTRACTION_PROMPT",
+    "CORE_TERM_EXTRACTION_PROMPT",
+    "QUERY_VALIDATION_PROMPT",
+    # Domain anchoring prompts
+    "DOMAIN_ANCHOR_EXTRACTION_PROMPT",
+    "QUERY_ANCHORING_INSTRUCTION",
+    # Research plan prompts
+    "RESEARCH_PLAN_PROMPT",
+    "COVERAGE_CHECK_PROMPT",
+    "MULTI_AREA_DETECTION_PROMPT",
+]

@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  sandbox:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.sandbox
+    
+    image: inquiro-sandbox
+
+    volumes:
+      - ../data:/app/data:ro
+      - ../outputs:/app/outputs:rw
+    
+    mem_limit: 4g
+    cpus: 2
+
+    network_mode: "none"
+    stdin_open: false
+    tty: false

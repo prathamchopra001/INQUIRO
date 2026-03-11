@@ -1,0 +1,89 @@
+# =============================================================================
+# INQUIRO Requirements
+# Autonomous AI Scientist for Data-Driven Discovery
+# =============================================================================
+
+# --- Core Framework ---
+pydantic>=2.0
+python-dotenv>=1.0
+httpx>=0.27
+networkx>=3.0
+click>=8.0
+tqdm>=4.60
+
+# --- Data Analysis ---
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+
+# --- Statistical Analysis ---
+statsmodels>=0.14
+
+# --- LLM Providers ---
+openai>=1.0
+anthropic>=0.18
+google-genai>=1.0
+
+# --- Literature Search & RAG ---
+PyMuPDF>=1.24              # PDF text extraction
+chromadb>=0.5              # Vector database
+sentence-transformers>=3.0 # Local embeddings (all-MiniLM-L6-v2)
+
+# --- Dataset Search ---
+ddgs>=7.0                  # DuckDuckGo search (replaces deprecated duckduckgo_search)
+kaggle>=1.6                # Kaggle datasets
+datasets>=3.0              # HuggingFace datasets
+bleach>=6.0                # HTML sanitization
+primp>=1.0                 # HTTP client for web scraping
+
+# --- Notebooks ---
+nbformat>=5.0
+
+# --- Testing ---
+pytest>=7.0
+pytest-asyncio>=0.20
+
+# --- Utilities ---
+tenacity>=8.0              # Retry logic
+orjson>=3.9                # Fast JSON parsing
+rich>=13.0                 # Console formatting (optional)
+
+# =============================================================================
+# PyTorch Configuration
+# =============================================================================
+# sentence-transformers requires PyTorch. Install one of these options:
+#
+# OPTION 1: CPU-only (recommended for most users)
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# OPTION 2: CUDA GPU (if you have NVIDIA GPU)
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#
+# The embedding model (all-MiniLM-L6-v2) works fine on CPU.
+# =============================================================================
+
+# =============================================================================
+# Optional Dependencies (uncomment if needed)
+# =============================================================================
+
+# --- Pathway Enrichment Analysis ---
+# gseapy>=1.0
+
+# --- Advanced NLP ---
+# transformers>=4.30
+# tokenizers>=0.15
+
+# --- Biological Sequence Analysis ---
+# biopython>=1.80
+
+# =============================================================================
+# Known Version Constraints
+# =============================================================================
+# - statsmodels 0.14+: Use `from statsmodels.stats.multitest import multipletests`
+#   (NOT from statsmodels.stats.multicomp)
+# - chromadb 0.4+: API changed, use `collection.add()` not `collection.upsert()`
+# - sentence-transformers 3.0+: Different model loading API
+# =============================================================================

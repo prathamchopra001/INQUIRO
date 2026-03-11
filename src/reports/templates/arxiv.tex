@@ -1,0 +1,55 @@
+% INQUIRO arXiv Preprint Template
+% Standard preprint format suitable for arXiv submissions
+
+\documentclass[11pt]{{article}}
+
+% Encoding
+\usepackage[utf8]{{inputenc}}
+\usepackage[T1]{{fontenc}}
+
+% Math
+\usepackage{{amsmath,amssymb,amsfonts}}
+
+% Graphics and tables
+\usepackage{{graphicx}}
+\usepackage{{booktabs}}
+\usepackage{{float}}
+
+% Layout - arXiv standard margins
+\usepackage[margin=1in]{{geometry}}
+\usepackage{{setspace}}
+\onehalfspacing
+
+% Links and citations
+\usepackage{{hyperref}}
+\hypersetup{{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue
+}}
+\usepackage{{natbib}}
+\bibliographystyle{{plainnat}}
+
+% Better typography
+\usepackage{{microtype}}
+
+% Author/affiliation formatting
+\usepackage{{authblk}}
+
+% Title
+\title{{{title}}}
+\author{{{author}}}
+\affil{{{institution}}}
+\date{{{date}}}
+
+\begin{{document}}
+
+\maketitle
+
+{body}
+
+{bibliography}
+
+\end{{document}}

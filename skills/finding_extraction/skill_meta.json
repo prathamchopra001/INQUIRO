@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "description": "Extract scientific findings from academic paper chunks",
+  "auto_generated": false,
+  "created_at": "2025-03-03",
+  "author": "INQUIRO Team",
+  "target_roles": ["extraction", "finding_extraction"],
+  "estimated_tokens": 450,
+  "tested_models": [
+    "claude-sonnet",
+    "claude-haiku"
+  ],
+  "notes": "Hand-crafted seed skill. Serves as template for auto-generated skills."
+}

@@ -1,0 +1,58 @@
+% INQUIRO NeurIPS Conference Template
+% Based on NeurIPS 2024 style guidelines
+% Note: For official submissions, use the actual neurips_2024.sty from https://neurips.cc/
+
+\documentclass{{article}}
+
+% NeurIPS approximation (if neurips_2024.sty unavailable)
+% For actual submissions, replace with: \usepackage[final]{{neurips_2024}}
+\usepackage[margin=1in]{{geometry}}
+\usepackage{{times}}
+
+% Core packages
+\usepackage[utf8]{{inputenc}}
+\usepackage[T1]{{fontenc}}
+\usepackage{{amsmath,amssymb,amsfonts}}
+\usepackage{{graphicx}}
+\usepackage{{booktabs}}
+\usepackage{{float}}
+\usepackage{{xcolor}}
+
+% NeurIPS-style formatting
+\usepackage{{titlesec}}
+\titleformat{{\section}}{{\normalfont\Large\bfseries}}{{\thesection}}{{1em}}{{}}
+\titleformat{{\subsection}}{{\normalfont\large\bfseries}}{{\thesubsection}}{{1em}}{{}}
+\titleformat{{\subsubsection}}{{\normalfont\normalsize\bfseries}}{{\thesubsubsection}}{{1em}}{{}}
+
+% Links (no colored boxes for print)
+\usepackage{{hyperref}}
+\hypersetup{{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue,
+    pdfborder={{0 0 0}}
+}}
+
+% Better typography
+\usepackage{{microtype}}
+
+% Algorithm formatting (common in ML papers)
+\usepackage{{algorithm}}
+\usepackage{{algorithmic}}
+
+% Title and author
+\title{{{title}}}
+\author{{{author}}}
+\date{{}}  % NeurIPS papers typically don't show date on first page
+
+\begin{{document}}
+
+\maketitle
+
+{body}
+
+{bibliography}
+
+\end{{document}}

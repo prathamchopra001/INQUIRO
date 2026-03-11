@@ -1,0 +1,45 @@
+# Environment variables (secrets!)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outputs
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+data/pdf_cache/ 
+data/run_*/ 
+
+data/chromadb/ 
+*.db 
+*.log
+dist/
+*.egg-info/
+*.ipynb_checkpoints/
+
+.env.local
+.env.production
+
+# Additional ignores
+logs/
+seed_papers/
+test_cache/
+.chroma/
+.pytest_cache/
+Docs/

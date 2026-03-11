@@ -1,0 +1,21 @@
+{
+  "version": "1.2.0",
+  "description": "Extract findings from academic papers with proper attribution using actual author names",
+  "auto_generated": false,
+  "created_at": "2026-03-03",
+  "updated_at": "2026-03-03",
+  "author": "INQUIRO Team",
+  "target_roles": ["literature_extraction", "lit_extraction"],
+  "estimated_tokens": 650,
+  "tested_models": [
+    "gemini-flash",
+    "claude-sonnet",
+    "qwen3:8b"
+  ],
+  "changelog": [
+    "1.0.0 - Initial version with attribution guidance",
+    "1.1.0 - Fixed: Now extracts REAL author names instead of [Authors] placeholder",
+    "1.2.0 - Fixed: Output format aligned with prompt (raw array, not wrapped in object)"
+  ],
+  "notes": "Literature-specific skill. Returns JSON array directly, not wrapped in {findings: [...]}."
+}

@@ -1,0 +1,47 @@
+# 1. Base image
+FROM python:3.10-slim
+
+# 2. Install system dependencies (some Python packages need these)
+#    Hint: matplotlib needs some system libs for rendering
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3-dev \
+    gcc \
+    g++ \
+    libfreetype6-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+
+# 3. Install Python data science libraries
+#    Hint: Use --no-cache-dir to keep the image small
+RUN pip install uv
+RUN uv pip install --system --no-cache-dir \
+    pandas \
+    numpy \
+    scipy \
+    matplotlib \
+    seaborn \
+    scikit-learn \
+    statsmodels \
+    gseapy \
+    networkx
+
+# 4. Create a non-root user called "sandbox"
+#    Hint: useradd with --create-home
+RUN useradd --create-home --shell /bin/bash sandbox
+
+# 5. Create the working directories
+#    /app/data, /app/outputs/figures, /app/scripts
+RUN mkdir -p /app/data /app/outputs/figures /app/scripts
+
+# 6. Set ownership of /app to the sandbox user
+RUN chown -R sandbox:sandbox /app
+
+# 7. Switch to the sandbox user
+USER sandbox
+
+# 8. Set the working directory to /app
+WORKDIR /app
+
+# 9. Default command (python3 is fine)
+CMD ["python3"]

@@ -1,0 +1,49 @@
+% INQUIRO Plain Article Template
+% Simple academic paper format using standard LaTeX article class
+
+\documentclass[11pt,a4paper]{{article}}
+
+% Encoding
+\usepackage[utf8]{{inputenc}}
+\usepackage[T1]{{fontenc}}
+
+% Math
+\usepackage{{amsmath,amssymb,amsfonts}}
+
+% Graphics and tables
+\usepackage{{graphicx}}
+\usepackage{{booktabs}}
+\usepackage{{float}}
+
+% Layout
+\usepackage[margin=1in]{{geometry}}
+\usepackage{{setspace}}
+\onehalfspacing
+
+% Links and references
+\usepackage{{hyperref}}
+\hypersetup{{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue
+}}
+
+% Better typography
+\usepackage{{microtype}}
+
+% Title formatting
+\title{{{title}}}
+\author{{{author}}}
+\date{{{date}}}
+
+\begin{{document}}
+
+\maketitle
+
+{body}
+
+{bibliography}
+
+\end{{document}}
