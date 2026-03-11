@@ -481,11 +481,11 @@ All tests use mocked LLM calls and Docker — no API keys or running containers 
 
 **Primary Inspiration**
 
-[1] Mitchener, L., Yiu, A., Chang, J., et al. (2025).  *INQUIRO: An AI Scientist for Autonomous Discovery* . arXiv preprint arXiv:2511.02824v2. Edison Scientific. https://arxiv.org/abs/2511.02824
+[1] Mitchener, L., Yiu, A., Chang, J., et al. (2025).  *KOSMOS: An AI Scientist for Autonomous Discovery* . arXiv preprint arXiv:2511.02824v2. Edison Scientific. https://arxiv.org/abs/2511.02824
 
 **Community Implementations**
 
-[2] jimmc414.  *INQUIRO: An AI Scientist for Autonomous Discovery — An implementation and adaptation to be driven by Claude Code or API* . GitHub. https://github.com/jimmc414/Inquiro
+[2] jimmc414.  *KOSMOS: An AI Scientist for Autonomous Discovery — An implementation and adaptation to be driven by Claude Code or API* . GitHub. https://github.com/jimmc414/Inquiro
 
 **Libraries and Frameworks**
 
