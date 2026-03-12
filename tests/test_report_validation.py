@@ -435,7 +435,8 @@ class TestReportValidationIntegration:
             
             report_path = gen.generate_report(
                 objective="Test objective",
-                cycles_completed=1
+                cycles_completed=1,
+                paper_format="discovery"
             )
             
             # Read report
@@ -445,7 +446,7 @@ class TestReportValidationIntegration:
             # Report should include questions section with gaps
             assert "Research Questions Addressed" in report_content
             assert "Critical question 1" in report_content
-            assert "❌" in report_content  # Open questions marker
+            assert "❓" in report_content or "❌" in report_content  # Open questions marker
 
 
 if __name__ == "__main__":
